@@ -16,7 +16,7 @@ var mergeNodes = function(head) {
     while (right){
         tmp_sum += right.val
         if (right.val == 0){
-            left = left.next
+            left = left.next3
             left.val = tmp_sum
             tmp_sum = 0
         }

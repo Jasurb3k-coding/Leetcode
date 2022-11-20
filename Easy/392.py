@@ -6,9 +6,9 @@ class Solution:
         sl, tl = len(s), len(t)
         while sp < sl:
             while tp < tl and s[sp] != t[tp]:
-                tp+=1
-            if tp == tl and (sp != sl-1 or s[sp] != t[tp-1]):
+                tp += 1
+            if tp == tl and (sp != sl - 1 or s[sp] != t[tp - 1]):
                 return False
-            sp+=1
-            tp+=1
+            sp += 1
+            tp += 1
         return True
